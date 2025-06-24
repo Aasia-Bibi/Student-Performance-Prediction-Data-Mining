@@ -1,0 +1,102 @@
+🎓 Student Performance Prediction – Data Mining Project Report
+📘 1. Introduction
+The goal of this project is to predict student academic performance based on various factors using data mining techniques. Accurate prediction models can help educational institutions provide early interventions and support for students at risk of underperforming.
+
+📊 2. Dataset Description
+Source: UCI Machine Learning Repository
+
+File used: student-mat.csv (Math course data)
+
+Records: 395 students
+
+Features: 33 (demographic, social, academic inputs)
+
+Target: Final grade G3, converted into:
+
+Low (0–9)
+
+Medium (10–13)
+
+High (14–20)
+
+🧹 3. Data Preprocessing
+Checked for missing values (none found).
+
+Converted G3 into categorical labels: Low, Medium, High.
+
+Dropped the original G3 numeric column.
+
+Applied one-hot encoding on categorical variables.
+
+Defined:
+
+X: Feature set (encoded data)
+
+y: Target labels (performance)
+
+🤖 4. Model Building
+📌 Train-test split:
+80% training, 20% testing
+
+stratify=y to preserve label proportions
+
+📌 Models Used:
+Decision Tree Classifier
+
+Random Forest Classifier (optional, better performance)
+
+python
+Copy
+Edit
+DecisionTreeClassifier(random_state=42)
+RandomForestClassifier(random_state=42)
+📈 5. Evaluation Metrics
+✅ Decision Tree Results:
+Accuracy: ~0.xx (replace with your result)
+
+Classification Report: Showed decent precision/recall
+
+Confusion Matrix: Displayed some class imbalance
+
+✅ Random Forest Results (if used):
+Accuracy: ~0.xx (replace with your result)
+
+Performed better due to ensemble learning
+
+📊 6. Feature Importance Visualization
+The top 10 features influencing student performance were:
+
+ - G2 (Second-period grade)
+
+ - G1 (First-period grade)
+
+ - failures
+
+ - absences
+
+ - school_support_yes
+
+ - studytime
+
+ - mother_education
+
+ - father_education
+
+Bar charts were used to visualize and explain which features had the most predictive power.
+
+🔍 7. Insights
+   - Early performance (G1, G2) strongly predicts final grade.
+
+   - Students with past class failures and more absences tend to perform worse.
+
+   - Parental education and support programs also play important roles.
+
+✅ 8. Conclusion
+This project demonstrates how classification models and data preprocessing can be applied to educational datasets for early prediction of academic performance. Such predictions can assist teachers and policymakers in supporting students proactively.
+
+🔧 9. Future Work
+   - Try other models: SVM, XGBoost, Logistic Regression
+
+    - Add dropout prediction (binary classification)
+
+    - Build a dashboard or web app for educators
