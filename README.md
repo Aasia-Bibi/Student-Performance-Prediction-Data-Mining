@@ -99,21 +99,3 @@ Feature importance was visualized to determine which attributes most affect fina
 * Build a Streamlit or Flask web app interface
 
 ---
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-## 🤝 Acknowledgments
-
-* UCI Machine Learning Repository
-* scikit-learn documentation
-
-```
-
----
-
-Let me know if you'd like a `requirements.txt` or a sample `StudentPerformancePrediction.ipynb` file to go along with it!
-```
